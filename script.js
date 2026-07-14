@@ -8,10 +8,16 @@ function login() {
     let mensaje;
 
     if (user == "admin" && password == "1234"){
-        mensaje = "Usuario y contraseña correctos.¡Bienvenido!";
+        window.location.href="home.html";
+        return;
+
     } else {
-        mensaje = "Usuario o contraseña incorrectos. Revise e intente de nuevo";
+        mensaje = "Usuario o contraseña incorrectos. Revise e intente de nuevo <color:red>";
     }
 
     document.getElementById("mensaje").innerHTML = mensaje;  
+}
+
+function desconectar(){
+    window.location.href="index.html";
 }
