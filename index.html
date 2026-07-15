@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de sesión</title>
-    <link rel="icon" href="Barber_Logos/Logo_Barber_1.png" class="icono">
+    <title>Keny's Barber Shop</title>
 
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&display=swap"
+      rel="stylesheet">
 </head>
 <body>
-    <main class="login">
-        <header>INICIO DE SESIÓN</header>
-            <div class="login_panel">
+    <header>
+        <div class="titulos">
+            <h1>Kenyi's Barber Shop</h1>
+            <h3>Donde tu estilo se corona</h3>
+        </div>
 
-                <div id="login_img"><img src="login.png"></div>
+        <img src="Barber_Logos/Logo_Fondo_Blanco.png" alt="logo">
+    </header>
 
-                <label>Usuario:</label>
-                <input type="text" id="user">
+    <div id="main-nav">
+        <nav>
+            <a href="./home.html">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Servicios</a>
+            <a href="#">Reservar cita</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
 
-                <label>Contraseña:</label>
-                <input type="password" id="password">
-
-                <button id="boton" onclick="login()">Log in</button>
-
-                <p id="mensaje"></p>
-
-            </div>
-    </main>
-    
-    
+    <br>
     <script src="script.js"></script>
     
 </body>
